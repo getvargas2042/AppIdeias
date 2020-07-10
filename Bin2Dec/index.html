@@ -1,16 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Bin2Dec</title>
+	<title>Bin2Num</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<script type="text/javascript" src=""></script>
+	<script type="text/javascript" src="app.js"></script>
 </head>
 <body>
+
 	<div class="position-alert">
+		<div class="alert alert-danger" role="alert">
+  			Os números binários formam um sistema matemático usado por computadores para criar informações. São compostos por uma base de apenas dois algarismos, sendo eles: 0 e 1. Por exemplo o número 13 é representado da seguinte maneira: 1101.
+		</div>
+	</div>
+
+	<div class="position-alert2">
 		<div class="alert alert-success" role="alert">
-  			Digite abaixo um valor Binário para convertê-lo em Decimal:
+  			Para mais dicas e informações 
+  				<a target="blank" href="https://pt.wikipedia.org/wiki/Ficheiro:ASCII-Table.svg">
+  					Clique Aqui
+  				</a>.
+		</div>
+	</div>
+
+	<div class="position-alert2">
+		<div class="alert alert-warning" role="alert">
+  			Digite abaixo um valor Binário para convertê-lo em Numeral:
 		</div>
 	</div>
 
@@ -18,16 +34,32 @@
 		<div class="size-form">
 			<div class="form-group">
     			<label for="exampleFormControlInput1"></label>
-    			<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Digite Aqui um valor Binário">
+    			<input type="email" class="form-control" id="binario" maxlength="7" placeholder="Digite Aqui um valor Binário.">
+    			<div class="dica">
+    				<small id="" class="text-muted">
+      					Deve ter entre 1 e 7 caracteres.
+    				</small>
+    			</div>
   			</div>
 		</div>
 	</div>  
 
 	<div class="position-buttons">
 	  	<div class="buttons">
-	  		<button type="button" class="btn btn-success">Converter</button>
-	  		<button type="button" class="btn btn-danger">Limpar</button>
+	  		<span class="position-buttonConverter">
+	  			<button onclick="converterBinario()" type="submit" class="btn btn-success">Converter</button>
+	  		</span>
+	  		<span class="position-buttonLimpar">
+	  			<button onclick="calcular('acao', 'clear')" type="button" class="btn btn-danger">Limpar</button>
+	  		</span>
 	  	</div>
+	</div>
+
+	<div>
+		<div class="result">
+			<h1>Conversão:</h1>
+				<div><h1 id="resultado"></h1></div>
+		</div>
 	</div>
 </body>
 </html>
