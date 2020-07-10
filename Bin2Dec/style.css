@@ -1,5 +1,5 @@
 body {
-	background-color: #bdf1ff;
+	background-color: #111111;
 }
 
 a:link {
@@ -48,6 +48,22 @@ a:link {
 }
 
 .result {
+	color: #ffffff;
 	text-align: center;
 	margin-top: 20px;
+}
+
+.resultado {
+	font-size: 100%;
+	color: #ffffff;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.direitos {
+	color: #ffffff;
+	text-align: center;
+	position: absolute;
+	margin-left: 700px;
+	margin-top: 390px;
 }
