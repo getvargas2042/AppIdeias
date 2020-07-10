@@ -6,6 +6,13 @@ a:link {
 	text-decoration: none;
 }
 
+.title {
+	font-size: 100%;
+	color: #ffffff;
+	text-align: center;
+	margin-top: 20px;
+}
+
 .size-form {
 	height: 70px;
 	width: 300px;
@@ -65,5 +72,5 @@ a:link {
 	text-align: center;
 	position: absolute;
 	margin-left: 700px;
-	margin-top: 390px;
+	margin-top: 330px;
 }
