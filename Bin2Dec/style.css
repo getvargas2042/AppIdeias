@@ -1,0 +1,25 @@
+body {
+	background-color: #bdf1ff;
+}
+
+.size-form {
+	height: 70px;
+	width: 300px;
+}
+
+.form {
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	margin-top: 300px;
+}
+
+.position-buttons {
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+}
+
+.position-alert {
+	margin-top: 20px;
+}
